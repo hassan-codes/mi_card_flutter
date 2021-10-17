@@ -43,76 +43,82 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 5.0,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 26.0),
-                padding: EdgeInsets.all(12.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                      size: 22.0,
-                    ),
-                    SizedBox(
-                      width: 12.0,
-                    ),
-                    Text(
-                      '+233 54 044 9939',
-                      style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                        size: 22.0,
+                      ),
+                      SizedBox(
+                        width: 12.0,
+                      ),
+                      Text(
+                        '+233 54 044 9939',
+                        style: TextStyle(
+                            color: Colors.teal,
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
-                padding: EdgeInsets.all(12.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail_outline,
-                      color: Colors.teal,
-                      size: 22.0,
-                    ),
-                    SizedBox(
-                      width: 12.0,
-                    ),
-                    Text(
-                      'baakomohammed95@gmail.com',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                          color: Colors.teal),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.mail_outline,
+                        color: Colors.teal,
+                        size: 22.0,
+                      ),
+                      SizedBox(
+                        width: 12.0,
+                      ),
+                      Text(
+                        'baakomohammed95@gmail.com',
+                        style: TextStyle(
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0,
+                            color: Colors.teal),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
-                padding: EdgeInsets.all(12.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.language,
-                      color: Colors.teal,
-                      size: 22.0,
-                    ),
-                    SizedBox(
-                      width: 12.0,
-                    ),
-                    Text(
-                      'hassancodes.dev',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                          color: Colors.teal),
-                    ),
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.language,
+                        color: Colors.teal,
+                        size: 22.0,
+                      ),
+                      SizedBox(
+                        width: 12.0,
+                      ),
+                      Text(
+                        'hassancodes.dev',
+                        style: TextStyle(
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0,
+                            color: Colors.teal),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],

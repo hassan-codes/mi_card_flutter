@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal[800],
         body: SafeArea(
           child: Column(
             children: <Widget>[
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 26.0),
+                margin: EdgeInsets.fromLTRB(22, 24, 22, 12),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
@@ -53,16 +53,17 @@ class MyApp extends StatelessWidget {
                     size: 22.0,
                   ),
                   title: Text(
-                    '+233 54 044 9939',
+                    '+233 50 068 1644',
                     style: TextStyle(
                         color: Colors.teal,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0),
                   ),
+                  dense: true,
                 ),
               ),
               Card(
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
+                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 22),
                   color: Colors.white,
                   child: ListTile(
                     leading: Icon(
@@ -74,12 +75,13 @@ class MyApp extends StatelessWidget {
                       'baakomohammed95@gmail.com',
                       style: TextStyle(
                           fontFamily: 'Source Sans Pro',
-                          fontSize: 18.0,
+                          fontSize: 20.0,
                           color: Colors.teal),
                     ),
+                    dense: true,
                   )),
               Card(
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
+                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 22),
                   color: Colors.white,
                   child: ListTile(
                     leading: Icon(
@@ -94,6 +96,33 @@ class MyApp extends StatelessWidget {
                           fontSize: 20.0,
                           color: Colors.teal),
                     ),
+                    dense: true,
+                  )),
+              Card(
+                  margin: EdgeInsets.symmetric(vertical: 12, horizontal: 22),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.account_circle,
+                      color: Colors.teal,
+                      size: 22.0,
+                    ),
+                    title: Text(
+                      'About me',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                          color: Colors.teal),
+                    ),
+                    subtitle: Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 16.0,
+                          color: Colors.grey[900]),
+                    ),
+                    isThreeLine: true,
+                    dense: true,
                   )),
             ],
           ),

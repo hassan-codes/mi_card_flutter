@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
-                radius: 50.0,
+                radius: 60.0,
                 backgroundColor: Colors.amber,
                 backgroundImage:
                     AssetImage('assets/images/baako_square_photo.jpg'),
@@ -44,9 +44,19 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 5.0,
                 ),
               ),
+              SizedBox(
+                height: 12.0,
+                child: Divider(
+                  height: 5.0,
+                  indent: 100.0,
+                  endIndent: 100.0,
+                  thickness: 1.0,
+                  color: Colors.tealAccent,
+                ),
+              ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.fromLTRB(22, 24, 22, 12),
+                margin: EdgeInsets.symmetric(vertical: 12, horizontal: 22),
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,

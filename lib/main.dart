@@ -46,81 +46,55 @@ class MyApp extends StatelessWidget {
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 26.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 22.0,
+                  ),
+                  title: Text(
+                    '+233 54 044 9939',
+                    style: TextStyle(
                         color: Colors.teal,
-                        size: 22.0,
-                      ),
-                      SizedBox(
-                        width: 12.0,
-                      ),
-                      Text(
-                        '+233 54 044 9939',
-                        style: TextStyle(
-                            color: Colors.teal,
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0),
-                      ),
-                    ],
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0),
                   ),
                 ),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.mail_outline,
-                        color: Colors.teal,
-                        size: 22.0,
-                      ),
-                      SizedBox(
-                        width: 12.0,
-                      ),
-                      Text(
-                        'baakomohammed95@gmail.com',
-                        style: TextStyle(
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                            color: Colors.teal),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.mail_outline,
+                      color: Colors.teal,
+                      size: 20.0,
+                    ),
+                    title: Text(
+                      'baakomohammed95@gmail.com',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 18.0,
+                          color: Colors.teal),
+                    ),
+                  )),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.language,
-                        color: Colors.teal,
-                        size: 22.0,
-                      ),
-                      SizedBox(
-                        width: 12.0,
-                      ),
-                      Text(
-                        'hassancodes.dev',
-                        style: TextStyle(
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                            color: Colors.teal),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 26),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.language,
+                      color: Colors.teal,
+                      size: 22.0,
+                    ),
+                    title: Text(
+                      'hassancodes.dev',
+                      style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                          color: Colors.teal),
+                    ),
+                  )),
             ],
           ),
         ),
